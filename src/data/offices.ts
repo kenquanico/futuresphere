@@ -11,7 +11,7 @@ export const offices = [
     city: 'New Mexico',
     address: '789 Canyon Road',
     phone: '(555) 555-1234',
-    image: images.careerOffice,
+    image: images.officeMeeting,
   },
   {
     city: 'London',

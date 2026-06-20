@@ -1,12 +1,12 @@
 <template>
-  <div class="space-y-20">
-    <section class="container-page section-pad">
+  <div class="pt-20">
+    <section class="mx-auto max-w-6xl px-6 py-16 lg:py-24">
       <SectionHeader
         tag="Features"
         title="Discover the Tools that Drive Success"
         subtitle="Unleash innovation and accelerate growth with our dynamic product."
       />
-      <div class="card mt-14 grid divide-y divide-slate-100 p-8 md:grid-cols-2 md:divide-x md:divide-y-0 lg:grid-cols-3">
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         <FeatureCard v-for="feature in features" :key="feature.title" :feature="feature" />
       </div>
     </section>

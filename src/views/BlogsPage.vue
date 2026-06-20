@@ -1,33 +1,33 @@
 <template>
-  <div class="space-y-20">
-    <section class="container-page section-pad">
+  <div class="pt-20">
+    <section class="mx-auto max-w-6xl px-6 py-16 lg:py-24">
       <SectionHeader
         title="Discover Insights and Inspiration"
         subtitle="Explore our captivating blog filled with thought-provoking articles and inspiring content that will ignite your creativity and expand your knowledge."
       />
-      <RouterLink :to="`/blogs/${featured.slug}`" class="card mt-16 grid gap-8 p-5 md:grid-cols-[0.9fr_1.1fr] md:p-8">
-        <img :src="featured.image" :alt="featured.title" class="h-80 w-full rounded-2xl object-cover" />
-        <div class="flex flex-col justify-center">
-          <span class="pill w-fit">{{ featured.category }}</span>
-          <h2 class="mt-5 text-3xl font-semibold leading-tight md:text-4xl">{{ featured.title }}</h2>
-          <p class="mt-5 leading-7 text-slate-500">{{ featured.excerpt }}</p>
-          <span class="mt-7 text-sm font-semibold text-slate-500 underline">Read more</span>
+      <RouterLink :to="`/blogs/${featured.slug}`" class="mb-16 grid grid-cols-1 items-center gap-8 rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-300 hover:scale-[1.01] hover:shadow-md lg:grid-cols-2">
+        <img :src="featured.image" :alt="featured.title" class="aspect-video w-full rounded-3xl object-cover shadow-md" />
+        <div class="flex flex-col gap-4">
+          <span class="inline-block w-fit rounded-full bg-purple-50 px-3 py-1 text-xs font-semibold text-purple-600">{{ featured.category }}</span>
+          <h2 class="text-3xl font-bold leading-tight text-gray-900 lg:text-4xl">{{ featured.title }}</h2>
+          <p class="text-base leading-relaxed text-gray-500">{{ featured.excerpt }}</p>
+          <span class="inline-flex items-center gap-1 text-sm font-semibold text-purple-600 transition-colors duration-200 hover:text-purple-800">Read more →</span>
         </div>
       </RouterLink>
 
-      <div class="mt-14 flex flex-wrap justify-center gap-3">
+      <div class="mb-12 flex flex-wrap justify-center gap-3">
         <button
           v-for="tab in tabs"
           :key="tab"
-          class="rounded-full px-4 py-2 text-sm font-semibold transition"
-          :class="active === tab ? 'bg-brand-accent text-white' : 'bg-white text-slate-500'"
+          class="rounded-full border px-5 py-2 text-sm font-semibold transition-all duration-200"
+          :class="active === tab ? 'border-[#6B4EFF] bg-[#6B4EFF] text-white' : 'border-gray-200 text-gray-500 hover:border-purple-300 hover:text-purple-600'"
           @click="active = tab"
         >
           {{ tab }}
         </button>
       </div>
 
-      <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         <BlogCard v-for="blog in filtered" :key="blog.id" :blog="blog" />
       </div>
     </section>

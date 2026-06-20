@@ -1,10 +1,10 @@
 <template>
-  <article class="rounded-2xl border border-slate-100 bg-white p-6">
+  <article class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
     <button class="flex w-full items-center justify-between gap-4 text-left" @click="open = !open">
-      <span class="font-semibold text-brand-purple">{{ question }}</span>
-      <span class="text-xl text-brand-accent">{{ open ? '−' : '+' }}</span>
+      <span class="text-base font-semibold text-gray-900">{{ question }}</span>
+      <span class="text-xl text-purple-600">{{ open ? '−' : '+' }}</span>
     </button>
-    <p v-if="open" class="mt-4 text-sm leading-6 text-slate-500">{{ answer }}</p>
+    <p v-if="open" class="mt-3 text-sm leading-relaxed text-gray-500">{{ answer }}</p>
   </article>
 </template>
 

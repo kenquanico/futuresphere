@@ -1,15 +1,31 @@
 export const images = {
-  heroTech: 'https://placehold.co/1200x520/071a30/7ee7ff?text=Future+Tech',
-  team: 'https://placehold.co/760x520/e8f4ef/1A1033?text=FutureSphere+Team',
-  office: 'https://placehold.co/760x520/f0e8dd/1A1033?text=Modern+Office',
-  officeAlt: 'https://placehold.co/760x520/e8eef6/1A1033?text=Studio+Workspace',
-  customer: 'https://placehold.co/520x360/d8d8d8/1A1033?text=Sarah+Thompson',
-  blog: 'https://placehold.co/520x340/f4efe8/1A1033?text=Healthcare+AI',
-  blogHero: 'https://placehold.co/720x420/fad6e8/6B4EFF?text=Social+Marketing',
-  blogInline: 'https://placehold.co/920x440/eaf2f6/2255ff?text=Engagement+Signals',
-  careerCollage: 'https://placehold.co/760x560/f3e5d4/1A1033?text=Creative+Team',
-  careerOffice: 'https://placehold.co/760x520/e8ece9/1A1033?text=Team+Collaboration',
+  heroTech: '/assets/hero-image-wrapper.png',
+  team: '/assets/homepage-photo.png',
+  office: '/assets/office-image-wrapper.png',
+  officeMeeting: '/assets/office-image-wrapper-1.png',
+  officeAlt: '/assets/office-image-wrapper-2.png',
+  customer: '/assets/global-customer.png',
+  blog: '/assets/blogs-image.png',
+  blogHero: '/assets/blogs-image.png',
+  blogInline: '/assets/blogs-image.png',
+  careerCollage: '/assets/careers-image.png',
+  careerOffice: '/assets/careers-image.png',
+  newsletterBg: '/assets/newsletter-bg.png',
+  footerBg: '/assets/footer-bg.png',
 };
 
-export const logos = ['descript', 'shopify', 'slack', 'elastic', 'loom'];
-export const partnerLogos = ['Airwallex', 'Outreach', 'Razorpay', 'Discord', 'Dropbox'];
+export const logos = [
+  { name: 'descript', icon: 'https://www.google.com/s2/favicons?domain=descript.com&sz=64' },
+  { name: 'shopify', icon: 'https://www.google.com/s2/favicons?domain=shopify.com&sz=64' },
+  { name: 'slack', icon: 'https://www.google.com/s2/favicons?domain=slack.com&sz=64' },
+  { name: 'elastic', icon: 'https://www.google.com/s2/favicons?domain=elastic.co&sz=64' },
+  { name: 'loom', icon: 'https://www.google.com/s2/favicons?domain=loom.com&sz=64' },
+];
+
+export const partnerLogos = [
+  { name: 'Airwallex', icon: 'https://www.google.com/s2/favicons?domain=airwallex.com&sz=64' },
+  { name: 'Outreach', icon: 'https://www.google.com/s2/favicons?domain=outreach.io&sz=64' },
+  { name: 'Razorpay', icon: 'https://www.google.com/s2/favicons?domain=razorpay.com&sz=64' },
+  { name: 'Discord', icon: 'https://www.google.com/s2/favicons?domain=discord.com&sz=64' },
+  { name: 'Dropbox', icon: 'https://www.google.com/s2/favicons?domain=dropbox.com&sz=64' },
+];

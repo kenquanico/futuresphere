@@ -1,14 +1,16 @@
 <template>
   <RouterLink
     :to="`/blogs/${blog.slug}`"
-    class="group block overflow-hidden rounded-2xl border border-slate-100 bg-white p-3 transition hover:-translate-y-1 hover:shadow-soft"
+    class="group block overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:scale-[1.01] hover:shadow-md"
   >
-    <img :src="blog.image" :alt="blog.title" class="h-48 w-full rounded-xl object-cover" />
-    <div class="p-3">
-      <span class="pill !px-2.5 !py-1 !text-xs">{{ blog.category }}</span>
-      <h3 class="mt-3 text-lg font-semibold leading-snug text-brand-ink">{{ blog.title }}</h3>
-      <p class="mt-3 line-clamp-4 text-sm leading-6 text-slate-500">{{ blog.excerpt }}</p>
-      <span class="mt-4 inline-flex text-sm font-semibold text-slate-500 underline">Read more</span>
+    <img :src="blog.image" :alt="blog.title" class="aspect-video w-full rounded-t-2xl object-cover" />
+    <div class="p-5">
+      <span class="inline-block rounded-full bg-purple-50 px-3 py-1 text-xs font-semibold text-purple-600">{{ blog.category }}</span>
+      <h3 class="mb-2 mt-3 line-clamp-2 text-base font-semibold text-gray-900">{{ blog.title }}</h3>
+      <p class="line-clamp-3 text-sm leading-relaxed text-gray-500">{{ blog.excerpt }}</p>
+      <span class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-purple-600 transition-colors duration-200 hover:text-purple-800">
+        Read more →
+      </span>
     </div>
   </RouterLink>
 </template>

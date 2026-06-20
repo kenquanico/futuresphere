@@ -1,11 +1,11 @@
 <template>
-  <section class="container-page fade-in">
+  <section class="fade-in mx-auto max-w-6xl px-6 py-16 lg:py-24">
     <SectionHeader
       tag="Our Offices"
       title="Discover Our Global Network of Offices"
       subtitle="Experience our expansive network of offices across the world, connecting you to our exceptional services wherever you are."
     />
-    <div class="card mt-12 grid gap-5 p-5 md:grid-cols-3">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
       <OfficeTile v-for="office in offices" :key="office.city" :office="office" />
     </div>
   </section>

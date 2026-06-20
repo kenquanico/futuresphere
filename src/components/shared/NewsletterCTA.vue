@@ -1,19 +1,22 @@
 <template>
-  <section class="container-page fade-in">
-    <div class="newsletter-bg rounded-3xl px-6 py-16 text-center text-white md:px-12 md:py-24">
-      <div class="relative z-10 mx-auto max-w-2xl">
-        <div class="mb-7 text-5xl">✉</div>
-        <h2 class="text-3xl font-semibold tracking-tight md:text-5xl">Do cool things with us.</h2>
-        <p class="mx-auto mt-6 max-w-md text-base text-white/80 md:text-lg">
+  <section class="fade-in px-6 py-24">
+    <div class="relative mx-auto max-w-6xl overflow-hidden rounded-3xl bg-gray-950 bg-cover bg-center" style="background-image: url('/assets/newsletter-bg.png')">
+      <div class="absolute inset-0 bg-black/15"></div>
+      <div class="relative z-10 flex flex-col items-center px-8 py-20 text-center">
+        <div class="mb-8 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 text-3xl text-white">✉</div>
+        <h2 class="mb-4 text-4xl font-bold text-white">Do cool things with us.</h2>
+        <p class="mb-10 max-w-md text-base leading-relaxed text-gray-400">
           Stay in the loop with updates from our team and community. Once a month.
         </p>
-        <form class="mx-auto mt-8 flex max-w-xl flex-col gap-3 rounded-2xl md:flex-row" @submit.prevent>
+        <form class="flex w-full max-w-md flex-col gap-3 sm:flex-row" @submit.prevent>
           <input
-            class="min-h-12 flex-1 rounded-xl border-0 bg-white px-5 text-sm text-brand-ink outline-none"
+            class="flex-1 rounded-full border border-white/30 bg-white px-5 py-3 text-sm text-gray-900 placeholder-gray-400 transition-colors focus:border-purple-400 focus:outline-none"
             type="email"
             placeholder="Enter your email"
           />
-          <button class="btn btn-primary rounded-xl px-7 text-sm">Subscribe to newsletter</button>
+          <button class="whitespace-nowrap rounded-full bg-[#6B4EFF] px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#5538EE]">
+            Subscribe to newsletter
+          </button>
         </form>
       </div>
     </div>

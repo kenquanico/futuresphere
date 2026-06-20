@@ -1,10 +1,10 @@
 <template>
-  <div class="mx-auto max-w-3xl text-center">
-    <span v-if="tag" class="pill">{{ tag }}</span>
-    <h1 :class="['mt-4 font-semibold tracking-tight text-brand-ink', large ? 'text-4xl md:text-6xl' : 'text-3xl md:text-5xl']">
+  <div class="mb-16 text-center">
+    <span v-if="tag" class="mb-3 block text-sm font-semibold uppercase tracking-widest text-purple-600">{{ tag }}</span>
+    <h1 :class="['mb-4 font-bold tracking-tight text-gray-900', large ? 'text-4xl lg:text-5xl' : 'text-3xl lg:text-4xl']">
       {{ title }}
     </h1>
-    <p v-if="subtitle" class="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-500 md:text-base">
+    <p v-if="subtitle" class="mx-auto max-w-2xl text-lg leading-relaxed text-gray-500">
       {{ subtitle }}
     </p>
   </div>

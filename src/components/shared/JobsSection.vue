@@ -1,11 +1,11 @@
 <template>
-  <section class="container-page fade-in">
+  <section class="fade-in mx-auto max-w-6xl px-6 py-16 lg:py-24">
     <SectionHeader
       tag="Careers"
       :title="title"
       subtitle="Browse through vacancies, internships and job postings at FutureSphere"
     />
-    <div class="mt-12 grid gap-4">
+    <div class="grid gap-6">
       <JobListingRow v-for="job in jobs" :key="job.id" :job="job" />
     </div>
   </section>
